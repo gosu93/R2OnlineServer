@@ -109,3 +109,20 @@ SERVER=127.0.0.1
 ```
 
 Также необходимо изменить ip в D:\r2server\Lib ： C_R2.xml, IpCheck_Dbgw.xml, PurpleAuthForSvrConfig.xml, server.xml
+
+#### Шаг 12: Реверсинг.
+В папке lib ищем PorteAuthForSvr_x64.dll и меняем через PorteAuthForSvr_x64_patcher.exe ip в нём на наш.
+Начиная с адреса 00028ad0
+![image](https://user-images.githubusercontent.com/122387884/232355950-d583dc2a-1459-4c86-9cd7-28c59cb71853.png)
+
+![image](https://user-images.githubusercontent.com/122387884/232356033-e2ad2799-5b12-4217-98d7-d24fa8622c89.png)
+
+#### Шаг 13: Запуск сервера.
+Запускаем файлы
+D:\r2server\Auth\PurpleAuthBack\PorteAuthBackSvr.exe
+D:\r2server\Auth\DPurpleAuthChanneling\PurpleChannelingAuthSvr.exe
+
+Открываем командную строку от имени администратора и пишем поочередно
+net start channelw
+net start managerw
+net start fieldw
