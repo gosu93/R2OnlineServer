@@ -123,6 +123,7 @@ D:\r2server\Auth\PurpleAuthBack\PorteAuthBackSvr.exe
 D:\r2server\Auth\DPurpleAuthChanneling\PurpleChannelingAuthSvr.exe
 
 Открываем командную строку от имени администратора и пишем поочередно
-net start channelw
-net start managerw
-net start fieldw
+
+![image](https://user-images.githubusercontent.com/122387884/232359356-56bb81fe-e32e-4fee-8506-c494062c453b.png)
+
+и net start Fieldw
