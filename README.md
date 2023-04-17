@@ -82,8 +82,30 @@
 
 #### Шаг 9: Установка языка поддержки сервера.
 Панель управления -> Язык и региональные стандарты -> Дополнительно -> Изменить язык системы -> Китайский (упрощенное письмо, Китай). 
+![image](https://user-images.githubusercontent.com/122387884/232353937-b2f1a5e2-9da8-4fca-a05b-8159e9acbd31.png)
 
 Перезагрузиться.
 
 #### Шаг 10: Настройка служб сервера.
 Переходим в папку D:\r2server\Lib и поочередно запускаем c.bat , f.bat, m.bat от имени администратора.
+
+#### Шаг 11: Редактирование конфигурационных файлов.
+Теперь отредактируем все текстовые и конфигурационные файлы сервера \r2server\Auth\DPurpleAuthChanneling\
+Меняем ip в PurpleChannelingAuthSvrConfig.xml 
+
+В папке D:\r2server\Data\
+Меняем ip и другие данные в Account.dsn, Billing.dsn, Game.dsn, Log.dsn, Parm.dsn чтобы получилось вида
+
+```
+[ODBC]
+DRIVER=SQL Server
+UID=sa
+PWD=Uewy837123ejwhewe
+Address=127.0.0.1,1433
+Network=DBMSSOCN
+DATABASE=FNLAccount
+APP=Microsoft Data Access Components
+SERVER=127.0.0.1
+```
+
+Также необходимо изменить ip в D:\r2server\Lib ： C_R2.xml, IpCheck_Dbgw.xml, PurpleAuthForSvrConfig.xml, server.xml
