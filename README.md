@@ -126,4 +126,4 @@ D:\r2server\Auth\DPurpleAuthChanneling\PurpleChannelingAuthSvr.exe
 
 ![image](https://user-images.githubusercontent.com/122387884/232359356-56bb81fe-e32e-4fee-8506-c494062c453b.png)
 
-и net start Fieldw
+и **net start Fieldw**
